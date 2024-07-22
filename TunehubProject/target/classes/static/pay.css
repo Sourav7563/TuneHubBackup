@@ -1,0 +1,36 @@
+.form{
+	box-sizing: border-box;
+	background: rgba(0, 0, 0, 0.6);
+	padding: 20px 18px;
+	border-radius: 30px;
+	box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.6);
+	width: 400px;
+	margin-top: 180px;
+	margin-left: 550px;
+	height: 350px;
+	color: white;
+}
+.buy-button{
+	padding: 10px 20px;
+	margin-left: 30px; 
+	font-size: 16px;
+	cursor: pointer;
+	background-color: rgba(250, 100, 0, 0.8);
+	color: #f9ffd7;
+	border: none;
+	border-radius: 30px;
+	display: block;
+	width: 300px;
+	box-sizing: border-box;
+}
+.buy-button:hover{
+	background-color: #ff8000;
+}
+.para{
+	margin-left: 100px;
+	color: #f9ffd7;
+}
+.h1{
+	margin-left: 70px;
+	color: #ffff80;
+}

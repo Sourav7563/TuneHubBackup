@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Registration Page</title>
+<link rel="stylesheet" href="registration.css">
+</head>
+<body>
+	<div class="main">
+		<div class="register">
+			<h2>Register Here</h2>
+			<form action="/register" id="register" method="post">
+				<label> User name <span>*</span>
+				</label> <br> <input id="name" type="text" placeholder="Enter Username"
+					name="username" required> <br> <br> <label>Email
+					<span>*</span>
+				</label> <br> <input id="name" type="email"
+					placeholder="Enter the Email" name="email" required> <br>
+				<br> <label>Password <span>*</span>
+				</label> <br> <input id="name" type="password"
+					placeholder="Enter Password" name="password" required> <br>
+				<br> <label>PhoneNumber <span>*</span>
+				</label> <br> <input id="name" type="text"
+					placeholder="Enter the Mobile number" name="mobilenumber" required>
+				<br> <br> <label>Gender <span>*</span></label><br> <input
+					type="radio" id="genderMale" name="gender" value="male" required>
+				<label for="genderMale">Male</label> <input type="radio"
+					id="genderFemale" name="gender" value="female" required> <label
+					for="genderFemale">Female</label> <input type="radio"
+					id="genderOther" name="gender" value="other" required> <label
+					for="genderOther">Other</label> <br> <br> <label>
+					Role <span>*</span>
+				</label><br> <input type="radio" id="roleAdmin" name="role"
+					value="admin" required> <label for="roleAdmin">
+					Admin </label> <input type="radio" id="roleCustomer" name="role"
+					value="customer" required> <label for="roleCustomer">Customer</label><br>
+				<br> <label> Address:</label> <br>
+				<textarea id="name" rows="" cols="" name="address"
+					placeholder="Enter Address"></textarea>
+				<br> <br>
+				<div class="sign">
+					<p>Already have account!</p>
+					<a href="login" id="a">Click here</a>
+				</div>
+				<br> <br>
+				<button name="submit" id="submit" type="submit" value="submit">Login</button>
+			</form>
+		</div>
+	</div>
+</body>
+</html>

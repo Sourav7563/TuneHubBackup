@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>View Playlist</title>
+<link rel="stylesheet" type="text/css" href="/commonfile.css">
+</head>
+<body>
+	<table border="1">
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Song Name</th>
+				<th>Songs</th>
+			</tr>
+		</thead>
+
+		<tbody>
+			<tr>
+			<tr th:each="playlist : ${playlists}">
+				<td th:text="${playlist.name}"></td>
+				
+				<td>
+                    <ol>
+                        <li th:each="song:${playlist.songs}">
+                            <span th:text="${song.name}"></span>
+                        </li>
+                    </ol>
+                </td>
+
+				<td>
+					<ol>
+						<li th:each="song:${playlist.songs}">
+						   <span> 
+						        <audio controls>
+									<source th:src="${song.link}">
+								</audio>
+						   <span th.text="${song.name}"> </span>
+						   </span> 
+						</li>
+				</td>
+			</tr>
+
+		</tbody>
+	</table>
+</body>
+</html>

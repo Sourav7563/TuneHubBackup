@@ -1,0 +1,74 @@
+body {
+	background:
+		url("https://as1.ftcdn.net/v2/jpg/01/11/81/82/1000_F_111818212_Qr6OPCwBEXIOfueYuOa9dPDGOFl2GbBX.jpghttps://as1.ftcdn.net/v2/jpg/01/11/81/82/1000_F_111818212_Qr6OPCwBEXIOfueYuOa9dPDGOFl2GbBX.jpg");
+	background-size: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.h2 {
+	font-size: 30px;
+	margin-top: 0px;
+}
+
+#p {
+	margin-left: 55px;
+	margin-right: 50px;
+	
+	line-height: 25px;
+	font-size: 17px;
+}
+
+.form1 {
+	background: rgba(0, 0, 0, 0.5);
+	box-sizing: border-box;
+	background-size: cover;
+	padding: 50px 18px;
+	border-radius: 30px;
+	box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.6);
+	width: 440px;
+	margin-top: 145px;
+	color: #f9ffd7;
+	font-weight: bold;
+}
+
+#p1 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 0px;
+}
+
+#p2 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 7px;
+}
+
+.input {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 0px;
+}
+
+#sub {
+	padding: 10px 20px;
+	margin-left: 20px;
+	font-size: 20px;
+	font-family:monospace;
+	cursor: pointer;
+	background-color: rgba(250, 100, 0, 0.8);
+	color: #f9ffd7;
+	border: none;
+	border-radius: 30px;
+	display: block;
+	width: 300px;
+	box-sizing: border-box;
+}
+#sub:hover{
+	transform: scale(1.05);
+	background-color: #ff8040;
+}
