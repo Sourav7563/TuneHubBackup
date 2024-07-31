@@ -44,11 +44,11 @@ public class UserController {
 	@PostMapping("/validate")
 	public String validateuser(@RequestParam("email") String email,
 			@RequestParam("password") String password, HttpSession session, Model model) {
-		
+
 		if(userService.validUser(email,password)==true) {
-			
+
 			session.setAttribute("email", email);
-			
+
 			String role = userService.getRole(email);
 
 			if(role.equals("admin")) {
@@ -57,12 +57,18 @@ public class UserController {
 			else{
 				User user = userService.getUser(email);
 				boolean userstatus = user.isPremium();
-				
+
 				List<Song> fetchAllSongs = songService.fetchAllSongs();
 				model.addAttribute("songs", fetchAllSongs);
-				
+
 				model.addAttribute("ispremium", userstatus);
-				return "customerhome";
+				
+				if(userstatus) {
+					return "viewsongs";
+				}
+				else {
+					return "customerhome";
+				}
 			}
 		}
 		else {
